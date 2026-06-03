@@ -62,7 +62,7 @@ Use the public IP and the SSH key your instructor gave you:
 
 ```bash
 chmod 600 key.pem
-ssh -i key.pem ubuntu@<YOUR_VM_PUBLIC_IP>
+ssh -i key.pem ubuntu@<YOUR_VM_PUBLIC_IP> -o IdentitiesOnly=true
 ```
 
 You should land in `/home/ubuntu`.
